@@ -1,0 +1,72 @@
+chap_software:
+    title: Software levels
+    description: Guidelines specific to different software levels
+    cluster_alt:
+        title: Alternative approaches to software levels
+        identifiers: [A8, A9]
+        alttitles: ["URL to definition", "Description"]
+    cluster_ana:
+        title: Guidelines analysis code
+        identifiers: [A12, A13, A14]
+        alttitles: ["Scope", "type of guideline", "Description"]
+    cluster_ana2:
+        identifiers: [A15]
+    cluster_proto:
+        title: Guidelines for prototype software
+        identifiers: [A16, A17, A18]
+        alttitles: ["Scope", "type of guideline", "Description"]
+    cluster_proto2:
+        identifiers: [A19]
+    cluster_infra:
+        title: Guidelines for research software infrastructure
+        identifiers: [A20, A21, A22]
+        alttitles: ["Scope", "type of guideline", "Description"]
+    cluster_all:
+        title: Guidelines for different livecycle stages
+        identifiers: [A25, A26, A27, A28]
+        alttitles: ["Decription", "URL", "Stage", "Scope"]
+    cluster_lifecycle:
+        identifiers: [A29, A30, A31, A32]
+        alttitles: ["Decription", "URL", "Stage", "Scope"]
+    cluster_lifecycle2:
+        identifiers: [A33, A34, A35, A36]
+        alttitles: ["Decription", "URL", "Stage", "Scope"]
+chap_infrastructure:
+    title: Infrastructure support
+    cluster_infra1:
+        title: Infrastructure
+        identifiers: [A46, A47, A48]
+        alttitles: ["Description", "Provider", "What is missing"]
+    cluster_infra2:
+        identifiers: [A49, A50, A51]
+        alttitles: ["Description", "Provider", "What is missing"]
+    cluster_infra3:
+        identifiers: [A52, A53, A54]
+        alttitles: ["Description", "Provider", "What is missing"]
+    cluster_infra4:
+        identifiers: [A55, A56, A57]
+        alttitles: ["Description", "Provider", "What is missing"]
+chap_finance:
+    title: Financial support
+    cluster_lack:
+        identifiers: [A59]
+    cluster_finance:
+        title: Sources of financing
+        identifiers: [A60, A61, A62]
+        alttitles: ["Description", "Type", "Lifecycle stage"]
+    cluster_finance2:
+        identifiers: [A63, A64, A65]
+        alttitles: ["Description", "Type", "Lifecycle stage"]
+    cluster_finance3:
+        identifiers: [A66, A67, A68]
+        alttitles: ["Description", "Type", "Lifecycle stage"]
+chap_incentives:
+    cluster_incent:
+        title: Incentives
+        identifiers: [A70]
+    cluster_incent:
+        title: Policy
+        identifiers: [A72]
+    cluster_involvement:
+        title: Community involvement
+        identifiers: [A74]
