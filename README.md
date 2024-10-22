@@ -21,10 +21,23 @@ See the notebook "Overview.ipynb" for an overview report of the survey. The stru
 
 ### Planned additional functionalities
 
-- [ ] Adding display options for ratings and selection questions
+- [ ] fully transform input data
+    - [x] Anonymize
+    - [ ] Clear NaNs
+    - [ ] Preprocess text questions?
+- [ ] Adding display options for all types of questions
+    - [ ] References
+    - [ ] Choice
+    - [ ] Selection
+    - [ ] Rating
+    - [ ] Ranking
+- [ ] Output as markdown pages and deploy as pages
 - [ ] Weighting according to confidence questions
-- [ ] Filtering of the dataset according to selection options (e.g. science cluster, representative view, ...)
-- [ ] Documentation on use
+- [ ] Filtering of the dataset according to selection options
+    - [ ] Research clusters
+    - [ ] Involvement
+    - [ ] viewpoint
+- [ ] Documentation on use (README and description)
 
 ### Display options
 
