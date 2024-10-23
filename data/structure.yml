@@ -24,50 +24,57 @@ chap_software:
         alttitles: ["Scope", "type of guideline", "Description"]
     table_all:
         title: Guidelines for different livecycle stages
+        description: "**Analysis code**"
         identifiers: [A23, A24, A25, A26]
-        alttitles: ["Decription", "URL", "Stage", "Scope"]
+        alttitles: ["Description", "URL", "Stage", "Scope"]
     table_lifecycle:
-        identifiers: [A29, A30, A31, A32]
+        description: "**Prototype tools**"
+        identifiers: [A27, A28, A29, A30]
         alttitles: ["Decription", "URL", "Stage", "Scope"]
     table_lifecycle2:
-        identifiers: [A33, A34, A35, A36]
+        description: "**Research software infrastructures**"
+        identifiers: [A31, A32, A33, A34]
         alttitles: ["Decription", "URL", "Stage", "Scope"]
 chap_infrastructure:
     title: Infrastructure support
     table_infra1:
-        title: Infrastructure
-        identifiers: [A46, A47, A48]
+        title: Infrastructure for Planning
+        identifiers: [A44, A45, A46]
         alttitles: ["Description", "Provider", "What is missing"]
     table_infra2:
-        identifiers: [A49, A50, A51]
+        title: Infrastructure for Development
+        identifiers: [A47, A48, A49]
         alttitles: ["Description", "Provider", "What is missing"]
     table_infra3:
-        identifiers: [A52, A53, A54]
+        title: Infrastructure for Maintenance
+        identifiers: [A50, A51, A52]
         alttitles: ["Description", "Provider", "What is missing"]
     table_infra4:
-        identifiers: [A55, A56, A57]
+        title: Infrastructure for Archiving
+        identifiers: [A53, A54, A55]
         alttitles: ["Description", "Provider", "What is missing"]
 chap_finance:
     title: Financial support
     table_lack:
-        identifiers: [A59]
+        identifiers: [A57]
     table_finance:
         title: Sources of financing
-        identifiers: [A60, A61, A62]
+        identifiers: [A58, A59, A60]
         alttitles: ["Description", "Type", "Lifecycle stage"]
     table_finance2:
-        identifiers: [A63, A64, A65]
+        identifiers: [A61, A62, A63]
         alttitles: ["Description", "Type", "Lifecycle stage"]
     table_finance3:
-        identifiers: [A66, A67, A68]
+        identifiers: [A64, A65, A66]
         alttitles: ["Description", "Type", "Lifecycle stage"]
 chap_incentives:
+    title: Incentives
     table_incent:
         title: Incentives
-        identifiers: [A70]
+        identifiers: [A68]
     table_incent:
         title: Policy
-        identifiers: [A72]
+        identifiers: [A70]
     table_involvement:
         title: Community involvement
-        identifiers: [A74]
+        identifiers: [A72]

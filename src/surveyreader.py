@@ -66,6 +66,7 @@ class DataSet:
                     "params": {}
                 })
                 qid = "A"+str(len(questions)-1)
+
             if len(subtexts)>1:
                 questions[qid]["subquestions"].append(subtexts[1:len(subtexts)])
                 questions[qid]["colnames"].append(colname)
@@ -100,8 +101,8 @@ class DataSet:
             for colname in columns:
                 columntype = ""
 
-                uniqueanswers = self.data[colname].unique()
-                answers = [x for x in uniqueanswers if pd.notna(x)]
+                answersall = [x for x in self.data[colname] if pd.notna(x)]
+                uniqueanswers = list(set(answersall))
                 
                 dtype = self.data[colname].dtype
                 
@@ -111,32 +112,57 @@ class DataSet:
                 elif str(dtype) == "datetime64[ns]":
                     columntype = "date"
                     
-                elif len(answers) == 0:
+                elif len(answersall) == 0:
                     columntype = "no answers"
                     
-                elif type(answers[0]) is str:
+                elif type(uniqueanswers[0]) is str:
                     columntype = "text"
-                    
+                   
                     subanswers = []
-                    totallength = 0
-                    for answer in answers:
-                        totallength += len(answer.split(";"))
-                        for subans in answer.split(";"):
+                    samelength = True
+                    entrylength = 1
+                    notsingle = False
+                    
+                    for answers in answersall:
+                        answerssplit = answers.split(";") 
+                        if entrylength == 1:
+                            entrylength = len(answerssplit)
+                            
+                        if answers == answersall[0] and len(answerssplit)>1:
+                            notsingle = True
+                                
+                        if len(answerssplit) != entrylength and samelength:
+                            samelength = False
+
+                        for subans in answerssplit:
                             if not subans.lstrip(" ") in subanswers:
                                 subanswers.append(subans.lstrip(" "))
 
-                    if totallength > len(subanswers):
+                    # see if entries can be split with different length -> multichoice
+                    
+                    if entrylength > 1 and not samelength:
                         columntype = "enumerate"
-    
-                        self.metadata[qid]["params"]["options"].setdefault(colname, subanswers)
 
-                    if str(answers[0]).find("http")>-1:
-                        columntype = "URL"
+                    #see if entries can be split with same length -> ranking
+                    
+                    elif entrylength > 1 and samelength and notsingle:
+                        columntype = "ranking"
 
-                    elif str(answers[0]).find("/5")>0 or str(answers[0]).find("/10")>0:
+                    #see if entries are repetitive -> select
+                
+                    elif entrylength == 1 and len(subanswers) < len(answersall):
+                        columntype = "select"
+
+                    #see if answers contain /10 -> rating
+                
+                    elif str(answers[0]).find("/5")>0 or str(answers[0]).find("/10")>0 and str(answers[0]).find("ttp")<0:
                         columntype = "rating"
 
-                        self.metadata[qid]["params"]["options"].setdefault(colname, float(str(answers[0]).split("/")[1]))
+                    if columntype != "text":
+                        if columntype == "rating":
+                            self.metadata[qid]["params"]["options"].setdefault(colname, float(str(answers[0]).split("/")[1]))
+                        else:
+                            self.metadata[qid]["params"]["options"].setdefault(colname, subanswers)
     
                 if not columntype:
                     columntype = "undefined"

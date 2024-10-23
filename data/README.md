@@ -30,13 +30,13 @@ In order to differentiate practices at different levels of software applicabilit
 ### Sections
 Elements of the survey are annotated according to the section and functionality:
 
-* Personal information (P): used to categorize the answers and evaluate the profile of the survey participant
-* Software level evaluation (S): evaluation of the applicability of software levels
-* Software levels (L): categorization per software level (L1 - L3)
-* Software description (D): description of the software per level
-* Guidelines (G): Guidelines and financing of quality practices
-* Technical software quality practices (T): elements of technical software practices
-* Management practices (M): aspects of software project management and incentivisation
+* Personal information: used to categorize the answers and evaluate the profile of the survey participant
+* Software level evaluation: evaluation of the applicability of software levels
+* Software levels: categorization per software level (L1 - L3)
+* Software description: description of the software per level
+* Guidelines: Guidelines and financing of quality practices
+* Technical software quality practices: elements of technical software practices
+* Management practices: aspects of software project management and incentivisation
 
 ### Question types
 

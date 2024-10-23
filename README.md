@@ -6,8 +6,9 @@ You can find the outcome of the survey in the *data* folder and generate a docum
 
 ## Contents
 * **data** contains the survey results, data annotation and steering file to produce a report
-* **src** contains supplementary functions
+* **docs** contains the pages output and documentation
 * **notebooks** contains the Jupyter notebooks to evaluate the survey
+* **src** contains supplementary functions
 
 ## Getting started
 
@@ -21,27 +22,16 @@ See the notebook "Overview.ipynb" for an overview report of the survey. The stru
 
 ### Planned additional functionalities
 
-- [ ] fully transform input data
-    - [x] Anonymize
-    - [ ] Clear NaNs
-    - [ ] Preprocess text questions?
 - [ ] Adding display options for all types of questions
     - [ ] References
     - [ ] Choice
     - [ ] Selection
     - [ ] Rating
     - [ ] Ranking
-- [ ] Output as markdown pages and deploy as pages
+- [x] Output as markdown pages and deploy as pages
 - [ ] Weighting according to confidence questions
 - [ ] Filtering of the dataset according to selection options
     - [ ] Research clusters
     - [ ] Involvement
     - [ ] viewpoint
 - [ ] Documentation on use (README and description)
-
-### Display options
-
-How should the result of the survey be displayed? Git pages? Pdf? ...?
---> Proposal to make the outcomes available as e.g. webpage and reference full report in the deliverable, using only highlight excerpts for report.
-
-Any other additional requests?
