@@ -1,4 +1,4 @@
-from surveyreader import DataSet
+from surveyer.surveyreader import DataSet
 from IPython.display import Markdown, display
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -236,7 +236,7 @@ class ReportMaker:
         options = ""
     
         for col in columns:
-            if col in self.dataset.metadata[questionid]["params"]["options"]:
+            if col in self.dataset.metadata[questionid]["params"]["options"]: 
                 if not options:
                     options = self.dataset.metadata[questionid]["params"]["options"][col]
                 else:

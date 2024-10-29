@@ -1,0 +1,17 @@
+name: surveyer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9         # Specify the Python version
+  - numpy              # Basic scientific computing library
+  - pandas             # Data manipulation and analysis
+  - matplotlib         # Plotting library
+  - seaborn            # Statistical data visualization
+  - jupyter            # Jupyter Notebook environment
+  - jupyterlab         # JupyterLab interface
+  - ipywidgets         # Interactive widgets for Jupyter
+  - nbconvert          # Convert notebooks to other formats
+  - pdoc               # Another documentation tool for Python
+  - pip                # Allows installing additional packages via pip
+  - pip:
+      - -r requirements.txt

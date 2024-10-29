@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YouSchnabel/EVERSE-landscape/HEAD)
+
 # EVERSE-landscape
 
 This repository serves to evaluate the outcomes of the landscaping survey from WP2 of the EVERSE project.

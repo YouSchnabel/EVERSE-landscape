@@ -1,0 +1,21 @@
+## Financial support
+
+### Sources of financing
+|    | Type                                                                       | Lifecycle stage   |
+|---:|:---------------------------------------------------------------------------|:------------------|
+|  6 | Many projects are also EU funded                                           | project funding   |
+| 10 | another national example: the funding via the Netherlands eScience Centre: | project funding   |
+|    | https://www.esciencecenter.nl                                              |                   |
+|    | Type                                                                                                                                                       | Lifecycle stage   |
+|---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
+| 10 | recently, the EU OSCARS project https://oscars-project.eu had funding opportunities for research including software - this is an example for side funding: | side funding      |
+|    | Description                      | Lifecycle stage                                                                                                                                                                                                                                                               |
+|---:|:---------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  6 | nan                              | Increase the recognition of research software engineering work and research software engineers (it's probably close to reputation but different in the sense that funders and high level management need to recognize the importance of this part of a scientific experiment) |
+|  9 | nan                              | Pride, vanity                                                                                                                                                                                                                                                                 |
+| 10 | Planning; Development; Archiving | Sharing of code with others                                                                                                                                                                                                                                                   |
+| 11 | nan                              | Gamification (Badges etc.)                                                                                                                                                                                                                                                    |
+| 12 | nan                              | no                                                                                                                                                                                                                                                                            |
+| 21 | nan                              | Get experience in using best practices for professional development                                                                                                                                                                                                           |
+| 25 | nan                              | Because the RSE is actually genuinely interested in the result/science                                                                                                                                                                                                        |
+| 27 | nan                              | Increase user base, consider options for technology transfer                                                                                                                                                                                                                  |
