@@ -2,10 +2,10 @@
 
 ### Importance of quality aspects
 
-![Importance of quality aspects](figures/plot_multirating_A107.png)
+![Importance of quality aspects](figures/plot_multirating_A107_'Evaluate'_'implemented'.png)
 ### Implementation of quality aspects
 
-![Implementation of quality aspects](figures/plot_multirating_A107.png)
+![Implementation of quality aspects](figures/plot_multirating_A107_'Evaluate'_'importance'.png)
 ### Tools to Provide general documentation
 
 |    | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Provide general documentation :Guidelines   | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Provide general documentation :Tools   |

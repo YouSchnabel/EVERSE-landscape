@@ -12,6 +12,8 @@ dependencies:
   - ipywidgets         # Interactive widgets for Jupyter
   - nbconvert          # Convert notebooks to other formats
   - pdoc               # Another documentation tool for Python
+  - pandoc
   - pip                # Allows installing additional packages via pip
   - pip:
       - -r requirements.txt
+      - -e . 

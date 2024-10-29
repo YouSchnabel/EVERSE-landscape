@@ -1,4 +1,3 @@
 setuptools
 tabulate
 survey
-pandas

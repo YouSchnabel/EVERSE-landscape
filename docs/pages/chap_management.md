@@ -2,7 +2,7 @@
 
 ### Relevance of incentives
 
-![Relevance of incentives](figures/plot_multirating_A67.png)
+![Relevance of incentives](figures/plot_multirating_A67_.png)
 ### Additional incentives
 
 |    | Do you know any other incentives that are missing?                                                                                                                                                                                                                            |
@@ -18,7 +18,7 @@
 
 ### Relevance of policy measures
 
-![Relevance of policy measures](figures/plot_multirating_A69.png)
+![Relevance of policy measures](figures/plot_multirating_A69_.png)
 ### Additional policies
 
 |    | Other policy: please provide description and link if possible   |

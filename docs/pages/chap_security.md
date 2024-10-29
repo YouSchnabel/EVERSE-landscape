@@ -2,7 +2,7 @@
 
 ### Relevance of security aspects
 
-![Relevance of security aspects](figures/plot_multirating_A76.png)
+![Relevance of security aspects](figures/plot_multirating_A76_.png)
 ### Additional security aspects
 
 |    | Are there any relevant security aspects missing above? If yes, please describe and provide guidelines if possible.   |

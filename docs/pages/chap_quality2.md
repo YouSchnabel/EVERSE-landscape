@@ -2,10 +2,10 @@
 
 ### Relevance of quality aspects
 
-![Relevance of quality aspects](figures/plot_multirating_A94.png)
+![Relevance of quality aspects](figures/plot_multirating_A94_'software'_'implemented'.png)
 ### Implementation of quality aspects
 
-![Implementation of quality aspects](figures/plot_multirating_A94.png)
+![Implementation of quality aspects](figures/plot_multirating_A94_'software'_'importance'.png)
 ### Tools to Use standard protocols and APIs
 
 |    | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Use standard protocols and APIs :Guidelines                   | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Use standard protocols and APIs :Tools   |

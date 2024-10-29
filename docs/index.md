@@ -16,4 +16,6 @@
 - [Quality aspects: Testing and Reliability](pages/chap_quality4.md)
 - [Quality aspects: Documentation](pages/chap_quality5.md)
 
+Back to the [repository](https://youschnabel.github.io/EVERSE-landscape/), or look up the [code documentation](https://youschnabel.github.io/EVERSE-landscape/pydocs/surveyer.html)!
+
 This site was built using [GitHub Pages](https://pages.github.com) and Jekyll.

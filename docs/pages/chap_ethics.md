@@ -2,7 +2,7 @@
 
 ### Relevance of ethics aspects
 
-![Relevance of ethics aspects](figures/plot_multirating_A81.png)
+![Relevance of ethics aspects](figures/plot_multirating_A81_.png)
 ### Additional ethics aspects
 
 |    | If you are aware of any ethical aspects not mentioned above, please add information here and link to relevant guidelines, if possible.   |

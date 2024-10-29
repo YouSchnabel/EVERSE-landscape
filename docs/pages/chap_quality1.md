@@ -2,10 +2,10 @@
 
 ### Importance of performance aspects
 
-![Importance of performance aspects](figures/plot_multirating_A88.png)
+![Importance of performance aspects](figures/plot_multirating_A88_.png)
 ### Implementation of performance aspects
 
-![Implementation of performance aspects](figures/plot_multirating_A89.png)
+![Implementation of performance aspects](figures/plot_multirating_A89_.png)
 ### Tools for Code efficiency and speed
 
 |    | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Code efficiency and speed:Guidelines   | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Code efficiency and speed:Tools   |

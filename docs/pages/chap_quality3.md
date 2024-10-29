@@ -2,10 +2,10 @@
 
 ### Importance of quality aspects
 
-![Importance of quality aspects](figures/plot_multirating_A97.png)
+![Importance of quality aspects](figures/plot_multirating_A97_'Ensure'_'implemented'.png)
 ### Implementation of quality aspects
 
-![Implementation of quality aspects](figures/plot_multirating_A97.png)
+![Implementation of quality aspects](figures/plot_multirating_A97_'Ensure'_'importance'.png)
 ### Tools to Optimize usability of GUI or API
 
 |    | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Optimize usability of GUI or API :Guidelines   | Which specific guidelines or tools are you aware of that help to enable the quality aspects? Provide short descriptions and/or URLs if possible, leave empty if there are no specific guidelines or tools. Optimize usability of GUI or API :Tools   |

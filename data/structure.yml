@@ -1,3 +1,4 @@
+pdfname: ESCAPE_survey_results.pdf
 scales:
     scale_highlow:
         options: ['very low', 'low', 'medium', 'high', 'very high']

@@ -36,3 +36,7 @@ Elements of the survey are structured according to the section and functionality
 * Guidelines: Guidelines and financing of quality practices
 * Technical software quality practices: elements of technical software practices
 * Management practices: aspects of software project management and incentivisation
+
+## Filling the survey
+
+The survey was open for the collection of answers in August and September 2024. It is still available, and additional results can serve to enhance the outcomes presented here.

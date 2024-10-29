@@ -2,7 +2,7 @@
 
 ### Relevance of community involvement
 
-![Relevance of community involvement](figures/plot_multirating_A71.png)
+![Relevance of community involvement](figures/plot_multirating_A71_.png)
 ### Additional community practices
 
 |    | Are you aware of any community involvement practice missing here? Please provide information below.   |
