@@ -176,7 +176,7 @@ class ReportMaker:
                     )
 
         if output == "pages":
-            indexpage += "\nBack to the [repository](https://youschnabel.github.io/EVERSE-landscape/), or look up the [code documentation](https://youschnabel.github.io/EVERSE-landscape/pydocs/surveyer.html)!\n"
+            indexpage += "\nBack to the [repository](https://github.com/YouSchnabel/EVERSE-landscape), or look up the [code documentation](https://youschnabel.github.io/EVERSE-landscape/pydocs/surveyer.html)!\n"
             indexpage += "\nThis site was built using [GitHub Pages](https://pages.github.com) and Jekyll.\n"
             with open(self.outpath + "index.md", "w") as f:
                 f.write(indexpage)
