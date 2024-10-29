@@ -93,3 +93,5 @@
 |    | https://posit.co/                                                                                                                                                                                              |                                                                                       |                                                                                                                                                                                             |
 | 27 | https://helmholtz.software, https://helmholtz.software, https://www.softwareheritage.org                                                                                                                       | Open/free platform; Institute or Organization; Large scale infrastructure             | no                                                                                                                                                                                          |
 
+## Infrastructure support
+

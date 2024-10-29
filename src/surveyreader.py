@@ -42,6 +42,7 @@ class DataSet:
 
         for colname in self.data.columns:
             colname_new = str(colname).replace("applicable:", "applicable ")
+            colname_new = str(colname).replace(": Confidence", "- Confidence")
             self.data = self.data.rename(columns={colname: colname_new})
 
     def _create_question_metadata(self):
@@ -138,9 +139,14 @@ class DataSet:
                             if not subans.lstrip(" ") in subanswers:
                                 subanswers.append(subans.lstrip(" "))
 
+                    #see if answers contain /10 -> rating
+                
+                    if str(uniqueanswers[0]).find("/5")>0 or str(uniqueanswers[0]).find("/10")>0 and str(uniqueanswers[0]).find("ttp")<0:
+                        columntype = "rating"
+
                     # see if entries can be split with different length -> multichoice
                     
-                    if entrylength > 1 and not samelength:
+                    elif entrylength > 1 and not samelength:
                         columntype = "enumerate"
 
                     #see if entries can be split with same length -> ranking
@@ -153,14 +159,9 @@ class DataSet:
                     elif entrylength == 1 and len(subanswers) < len(answersall):
                         columntype = "select"
 
-                    #see if answers contain /10 -> rating
-                
-                    elif str(answers[0]).find("/5")>0 or str(answers[0]).find("/10")>0 and str(answers[0]).find("ttp")<0:
-                        columntype = "rating"
-
                     if columntype != "text":
-                        if columntype == "rating":
-                            self.metadata[qid]["params"]["options"].setdefault(colname, float(str(answers[0]).split("/")[1]))
+                        if columntype == "rating" and (str(uniqueanswers[0]).find("/5")>0 or str(uniqueanswers[0]).find("/10")>0):
+                            self.metadata[qid]["params"]["options"].setdefault("factor", int(str(uniqueanswers[0]).split("/")[1]))
                         else:
                             self.metadata[qid]["params"]["options"].setdefault(colname, subanswers)
     
@@ -197,3 +198,29 @@ class DataSet:
             colnames = [self.metadata[questionid]["question"]]
             
         return self.data.loc[:, colnames]
+
+    def _get_colnames(self, questionids, acceptedtypes = []):
+        """Returns column names for given question IDs, facilitating filtering for specific types.
+        """
+
+        colnames = []
+        
+        for qid in questionids:
+            if acceptedtypes and self.metadata[qid]["entrytype"] in acceptedtypes or not acceptedtypes:
+                colnames.append(self.metadata[qid]["question"])
+            elif self.metadata[qid]["entrytype"] == "multiple":
+                for colname in self.metadata[qid]["params"]["subtypes"]:
+                    if self.metadata[qid]["params"]["subtypes"][colname] in acceptedtypes:
+                        colnames.append(colname)
+            else:
+                print ("For question-ID", qid, "the type is not an accepted type ",acceptedtypes,
+                       " or 'multiple', will not add type", self.metadata[qid]["entrytype"]) 
+
+        return colnames
+    
+    def extract_subset(self, questionids, acceptedtypes = []):
+        """Returns dataframe with subset of data according to questionids, and filters for provided types of questions.
+        """
+        colnames = self._get_colnames(questionids, acceptedtypes)
+        
+        return self.data[colnames]

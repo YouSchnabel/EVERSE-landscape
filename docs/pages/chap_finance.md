@@ -45,3 +45,5 @@
 |---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------|
 | 10 | recently, the EU OSCARS project https://oscars-project.eu had funding opportunities for research including software - this is an example for side funding: | side funding |
 
+## Financial support
+

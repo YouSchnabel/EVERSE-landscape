@@ -34,4 +34,6 @@ See the notebook "Overview.ipynb" for an overview report of the survey. The stru
     - [ ] Research clusters
     - [ ] Involvement
     - [ ] viewpoint
+- [ ] Install, mybinder, authors, metadata
 - [ ] Documentation on use (README and description)
+

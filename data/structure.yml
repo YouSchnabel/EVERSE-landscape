@@ -1,3 +1,35 @@
+scales:
+    scale_highlow:
+        options: ['very low', 'low', 'medium', 'high', 'very high']
+        stepsize: 1
+        zero: medium
+    scale_usage:
+        options: ['not used', 'sometimes used', 'partially used', 'often used', 'always used']
+        stepsize: 1
+        zero: medium
+chap_participants:
+    title: Participation
+    description: Statistics on the survey responses
+    filename: participation
+    count_perspective:
+        title: Perspective of the participants
+        identifier: A0
+        charttype: pie
+        altoptions: [personal, research field, general]
+    table_field:
+        title: Research field
+        identifiers: [A1]
+    count_involvement:
+        title: Involvement of the participant with research software
+        description: Multiple selections were possible
+        identifier: A2
+        charttype: bar
+        altoptions: [software practicioner, research software manager, group representative, other]
+    count_cluster:
+        title: Participation in EOSC science clusters
+        identifier: A4
+        charttype: bar
+        altoptions: [Life Science RI, ESCAPE, ENFRI-FAIR, PaNOSC, SSHOC]
 chap_software:
     title: Software levels
     description: Guidelines specific to different software levels
@@ -6,6 +38,14 @@ chap_software:
         title: Alternative approaches to software levels
         identifiers: [A6, A7]
         alttitles: ["URL to definition", "Description"]
+    compare_importance:
+        title: Importance of the software level
+        identifier: A8
+        selectedparts: "Relative importance"
+    compare_use:
+        title: Application of quality practices applied
+        identifier: A8
+        selectedparts: "Overall use"
     table_ana:
         title: Guidelines analysis code
         identifiers: [A10, A11, A12]
@@ -22,17 +62,17 @@ chap_software:
         title: Guidelines for research software infrastructure
         identifiers: [A18, A19, A20]
         alttitles: ["Scope", "type of guideline", "Description"]
+    rating_confidence:
+        title: Level of confidence for answers in this section
+        identifier: A21
     table_all:
         title: Guidelines for different livecycle stages
-        description: "**Analysis code**"
         identifiers: [A23, A24, A25, A26]
         alttitles: ["Description", "URL", "Stage", "Scope"]
     table_lifecycle:
-        description: "**Prototype tools**"
         identifiers: [A27, A28, A29, A30]
         alttitles: ["Decription", "URL", "Stage", "Scope"]
     table_lifecycle2:
-        description: "**Research software infrastructures**"
         identifiers: [A31, A32, A33, A34]
         alttitles: ["Decription", "URL", "Stage", "Scope"]
 chap_infrastructure:
@@ -67,14 +107,205 @@ chap_finance:
     table_finance3:
         identifiers: [A64, A65, A66]
         alttitles: ["Description", "Type", "Lifecycle stage"]
-chap_incentives:
-    title: Incentives
+chap_management:
+    title: Incentives and policies
+    multirate_incent1:
+        title: Relevance of incentives
+        identifier: A67
     table_incent:
-        title: Incentives
+        title: Additional incentives
         identifiers: [A68]
-    table_incent:
-        title: Policy
+    multirate_policy:
+        title: Relevance of policy measures
+        identifier: A69
+    table_policy:
+        title: Additional policies
         identifiers: [A70]
+chap_community:
+    title: Community involvement
+    multirate_community:
+        title: Relevance of community involvement
+        identifier: A71
     table_involvement:
-        title: Community involvement
+        title: Additional community practices
         identifiers: [A72]
+    table_community:
+        title: Guidelines for community involvement
+        alttitles: ["Description", "Link"]
+        identifiers: [A73]
+    table_community2:
+        alttitles: ["Description", "Link"]
+        identifiers: [A74]
+    table_community3:
+        alttitles: ["Description", "Link"]
+        identifiers: [A75]
+    rating_confidence:
+        title: Level of confidence for answers in this section
+        identifier: A86
+chap_security:
+    title: Software security
+    multirate_security:
+        title: Relevance of security aspects
+        identifier: A76
+    table_security:
+        title: Additional security aspects
+        identifiers: [A77]
+    table_secguides:
+        title: Guidelines for software security
+        alttitles: ["Description", "Link"]
+        identifiers: [A78]
+    table_secguides2:
+        alttitles: ["Description", "Link"]
+        identifiers: [A79]
+    table_secguides3:
+        alttitles: ["Description", "Link"]
+        identifiers: [A80]
+    rating_confidence:
+        title: Level of confidence for answers in this section
+        identifier: A86
+chap_ethics:
+    title: Ethics
+    multirate_ethics:
+        title: Relevance of ethics aspects
+        identifier: A81
+    table_ethics:
+        title: Additional ethics aspects
+        identifiers: [A82]
+    table_ethicsguides:
+        title: Guidelines for ethical aspects
+        alttitles: ["Description", "Link"]
+        identifiers: [A83]
+    table_ethicsguides2:
+        alttitles: ["Description", "Link"]
+        identifiers: [A84]
+    table_ethicsguides2:
+        alttitles: ["Description", "Link"]
+        identifiers: [A85]
+    rating_confidence:
+        title: Level of confidence for answers in this section
+        identifier: A86
+chap_quality1:
+    title: "Quality aspects: Performance" 
+    multirate_relevance:
+        title: Importance of performance aspects
+        identifier: A88
+    multirate_implementation:
+        title: Implementation of performance aspects
+        identifier: A89
+    table_guidelines:
+        title: Tools for Code efficiency and speed
+        identifiers: [A90]
+    table_guidelines2:
+        title: Tools for Correctness of output & accuracy
+        identifiers: [A91]
+    table_guidelines3:
+        title: Tools to Perform Code Profiling
+        identifiers: [A92]
+    table_guidelines4:
+        title: Tools for the Extendability of code
+        identifiers: [A93]
+    table_guidelines5:
+        title: Tools for Maintainability of software project
+        identifiers: [A94]
+chap_quality2:
+    title: "Quality aspects: Standardization" 
+    multirate_relevance6:
+        title: Relevance of quality aspects
+        exclude: [software, implemented]
+        identifier: A94
+    multirate_relevance6b:
+        title: Implementation of quality aspects
+        exclude: [software, importance]
+        identifier: A94
+    table_guidelines6:
+        title: Tools to Use standard protocols and APIs
+        identifiers: [A95]
+    table_guidelines7:
+        title: Tools to Use coding conventions and style
+        identifiers: [A96]
+    table_guidelines8:
+        title: Tools to Ensure reusability of code
+        identifiers: [A97]
+chap_quality3:
+    title: "Quality aspects: Usability" 
+    multirate_relevance3:
+        title: Importance of quality aspects
+        exclude: [Ensure, implemented]
+        identifier: A97
+    multirate_relevance3b:
+        title: Implementation of quality aspects
+        exclude: [Ensure, importance]
+        identifier: A97
+    table_guidelines9:
+        title: Tools to Optimize usability of GUI or API
+        identifiers: [A98]
+    table_guidelines10:
+        title: Tools to Provide packaging and containerization
+        identifiers: [A99]
+    table_guidelines11:
+        title: Tools to Ensure compatibility with different platforms
+        identifiers: [A100]
+    table_guidelines12:
+        title: Tools to Register in software repositories
+        identifiers: [A101]
+    table_guidelines13:
+        title: Tools to Make the code citable
+        identifiers: [A102]
+    table_guidelines14:
+        title: Tools to Apply a license
+        identifiers: [A103]
+chap_quality4:
+    title: "Quality aspects: Testing and Reliability" 
+    multirate_relevance2:
+        title: Importance of quality aspects
+        exclude: [Apply, implemented]
+        identifier: A103
+    multirate_relevance2b:
+        title: Implementation of quality aspects
+        exclude: [Apply, importance]
+        identifier: A103
+    table_guidelines15:
+        title: Tools to Use version control
+        identifiers: [A104]
+    table_guidelines16:
+        title: Tools to Use continuous integration
+        identifiers: [A105]
+    table_guidelines17:
+        title: Tools to Create tests and benchmarks
+        identifiers: [A106]
+    table_guidelines18:
+        title: Tools to Evaluate coverage of testing
+        identifiers: [A107]
+chap_quality5:
+    title: "Quality aspects: Documentation" 
+    multirate_relevance5:
+        title: Importance of quality aspects
+        exclude: [Evaluate, implemented]
+        identifier: A107
+    multirate_relevance5b:
+        title: Implementation of quality aspects
+        exclude: [Evaluate, importance]
+        identifier: A107
+    table_guidelines19:
+        title: Tools to Provide general documentation
+        identifiers: [A108]
+    table_guidelines20:
+        title: Tools to Issue a scientific publication
+        identifiers: [A109]
+    table_guidelines21:
+        title: Tools to Provide user examples
+        identifiers: [A110]
+    table_guidelines22:
+        title: Tools to Provide extensive metadata description
+        identifiers: [A111]
+    rating_confidence:
+        title: Level of confidence for answers in this section
+        identifier: A112
+    table_additional:
+        title: Additional comments
+        identifiers: [A113]
+        
+
+
+
+
