@@ -1,6 +1,5 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YouSchnabel/EVERSE-landscape/HEAD)
 [![Pages](https://img.shields.io/badge/GitHub-Pages-blue.svg)](https://youschnabel.github.io/EVERSE-landscape/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # EVERSE-landscape
 
